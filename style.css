@@ -1,0 +1,158 @@
+:root{
+  /*التحكم بالوان الموقع*/
+  --primarycolor:#2a2a2a;
+  --secondarycolor:gray;
+  --lightcolor:#dcd6c8;
+  --bgcolor-1:#da7c7c;
+  --bgcolor-2:rgb(164, 161, 161);
+  --padding: 8%;
+
+}
+
+*{
+  margin: 0%;
+ padding: 0%;
+ box-sizing: border-box;
+
+}
+html{
+  font-family: "Amiri";
+  font-size: 16px;
+  color: var(--lightcolor);
+}
+
+
+span{
+  color: var(--primarycolor);
+}
+
+h2{
+  font-size: 2.2rem;
+  letter-spacing: 0.05rem;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 3.65rem;
+  margin: 1.7rem 0;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 3.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+  letter-spacing: 0.12rem;
+  color: var(--secondaryColor);
+}
+
+.home{
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bgcolor-2);
+  display: flex;
+  flex-direction: column;
+}
+span{
+  color: var(--primarycolor);
+}
+
+h2{
+  font-size: 2.2rem;
+  letter-spacing: 0.05rem;
+  cursor: pointer;
+}
+nav{
+  padding-top: 2.8rem;
+  padding-left: var(--padding);
+  padding-right: var(--padding);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin: 0.8rem 1.5rem;
+ }
+ nav ul li a {
+  color: var(--lightcolor);
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.4s;
+
+ }
+ nav ul li a:hover{
+ color: var(--primarycolor);
+
+}
+
+.btn{
+  background-color: var(--primarycolor);
+  color: var(--lightcolor);
+  text-decoration: none;
+  border: 2px solid  transparent;
+  font-weight: bold;
+  padding: 0.8rem 1.87rem;
+  border-radius: 30px;
+  transition: 0.4s;
+}
+
+.btn:hover{
+  background-color: transparent;
+  border: 2px solid  var(--primarycolor);
+}
+
+.content{
+  flex-grow: 1;
+  padding: 0 var(--padding);
+  display: flex;
+  align-items: center;
+}
+
+.container-texts{
+  position: relative;
+  bottom: 30px;
+}
+  
+
+
+.social {
+  margin-top: 2.5rem; /* مسافة صغيرة بين الزر والأيقونات */
+  text-align:left; /* لتوسيط الأيقونات */
+}
+
+.social a {
+  display: inline-block; /* لضمان ظهور الأيقونات بجانب بعضها */
+  margin: 0 0.5rem; /* مسافة أفقية بين الأيقونات */
+}
+
+.social img {
+  width: 2.5rem; /* حجم الأيقونات */
+  transition: transform 0.3s ease; /* تأثير التحريك */
+}
+
+.social img:hover {
+  transform: scale(1.2); /* تكبير عند التمرير */
+}
+.container-images{
+width: 400px;
+height: 500px;
+position: relative;
+align-self: flex-end;
+}
+.container-images img{
+  position: absolute;
+  bottom:0;
+  height: 100%;
+  left: 30%;
+transition: bottom 1s left 1s;
+}
+.container-images:hover.shape{
+  bottom: 70px;
+  }
+.container-images:hover.pic{
+  left: 20%;
+  }
